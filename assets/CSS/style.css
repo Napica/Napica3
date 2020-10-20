@@ -1,0 +1,52 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-size: cover;
+  background-image: url("https://images.unsplash.com/photo-1516541196182-6bdb0516ed27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+}
+
+.jumbotron {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("https://images.unsplash.com/photo-1547726391-52229b642470?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1155&q=80");
+}
+
+.headerStyle {
+  font-weight: bold;
+  font-family: "Abril Fatface", cursive;
+  color: white;
+}
+
+.container {
+  position: relative;
+  min-height: 75vh;
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+}
+
+.homeBtn {
+  padding: 5px;
+}
+
+.section-background {
+  background-color: #f2f4f5;
+}
+
+footer {
+  position: relative;
+  margin-top: 5px;
+  padding-top: 5px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f4f5;
+}
+
+.hide {
+  display: none;
+}
