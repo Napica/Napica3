@@ -13,8 +13,9 @@ $(document).ready(function () {
   var burgerBtn = $("#burgerClick");
   var contacts = $("#contacts");
   var contactClick = $("#contactClick");
-  var motivational = $("#motivational");
-  var motivationalClick = $("#motivationalClick");
+  const project2 =$("#crypticEncounters")
+  var ghosts = $("#ghostProject")
+
   var randomMotivation = $("#randomMotivation");
 
   // JS variables
@@ -25,6 +26,19 @@ $(document).ready(function () {
 
   // event listeners
 
+
+ghosts.on("click", function (event) {
+  event.preventDefault()
+  aboutMe.addClass("hide");
+  tonedTribe.addClass("hide");
+  planner.addClass("hide");
+  genPass.addClass("hide");
+  contacts.addClass("hide");
+  project2.removeClass("hide")
+  burger.addClass("hide");
+})
+
+
   // home button
   homeBtn.on("click", function (event) {
     event.preventDefault();
@@ -33,7 +47,7 @@ $(document).ready(function () {
     planner.addClass("hide");
     genPass.addClass("hide");
     contacts.addClass("hide");
-    motivational.addClass("hide");
+    project2.addClass("hide")
     burger.addClass("hide");
   });
   //planner button
@@ -44,7 +58,7 @@ $(document).ready(function () {
     planner.addClass("hide");
     genPass.addClass("hide");
     contacts.addClass("hide");
-    motivational.addClass("hide");
+    project2.addClass("hide")
     burger.addClass("hide");
   });
   //planner button
@@ -55,7 +69,7 @@ $(document).ready(function () {
     tonedTribe.addClass("hide");
     genPass.addClass("hide");
     contacts.addClass("hide");
-    motivational.addClass("hide");
+    project2.addClass("hide")
     burger.addClass("hide");
   });
   // GenPass button
@@ -67,7 +81,7 @@ $(document).ready(function () {
     planner.addClass("hide");
     genPass.removeClass("hide");
     contacts.addClass("hide");
-    motivational.addClass("hide");
+    project2.addClass("hide")
     burger.addClass("hide");
   });
 
@@ -81,7 +95,7 @@ $(document).ready(function () {
     planner.addClass("hide");
     genPass.addClass("hide");
     contacts.addClass("hide");
-    motivational.addClass("hide");
+    project2.addClass("hide")
     burger.removeClass("hide");
   });
 
@@ -93,20 +107,10 @@ $(document).ready(function () {
     planner.addClass("hide");
     genPass.addClass("hide");
     contacts.removeClass("hide");
-    motivational.addClass("hide");
+    project2.addClass("hide")
     burger.addClass("hide");
   });
-  // Motivation button
-  motivationalClick.on("click", function (event) {
-    event.preventDefault();
-    aboutMe.addClass("hide");
-    tonedTribe.addClass("hide");
-    planner.addClass("hide");
-    genPass.addClass("hide");
-    contacts.addClass("hide");
-    motivational.removeClass("hide");
-    burger.addClass("hide");
-  });
+  
 
   randomMotivation.on("click", function (event) {
     event.preventDefault();
